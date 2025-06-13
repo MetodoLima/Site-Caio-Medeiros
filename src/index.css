@@ -139,19 +139,41 @@
   }
 }
 
-/* Typography hierarchy */
+/* Typography hierarchy - Mobile-first responsive */
 .text-display {
-  @apply text-5xl md:text-7xl font-light tracking-tight;
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight;
 }
 
 .text-headline {
-  @apply text-3xl md:text-5xl font-light tracking-tight;
+  @apply text-3xl sm:text-4xl md:text-5xl font-light tracking-tight;
 }
 
 .text-title {
-  @apply text-xl md:text-2xl font-medium;
+  @apply text-lg sm:text-xl md:text-2xl font-medium;
 }
 
 .text-body {
-  @apply text-base md:text-lg leading-relaxed;
+  @apply text-sm sm:text-base md:text-lg leading-relaxed;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  /* Ensure touch targets are at least 44px */
+  button, a {
+    @apply min-h-[44px];
+  }
+  
+  /* Improve readability on small screens */
+  h1, h2, h3 {
+    @apply leading-tight;
+  }
+  
+  /* Better spacing for mobile */
+  section {
+    @apply px-4;
+  }
 }

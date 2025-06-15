@@ -35,9 +35,9 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Left side - Content */}
-          <div className="order-2 lg:order-1 animate-fade-in space-y-8">
+          <div className="flex-1 animate-fade-in space-y-8">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
               <span className="text-sm text-primary/80 font-medium tracking-widest uppercase">
@@ -45,19 +45,63 @@ const Hero = () => {
               </span>
             </div>
             
-            <div className="space-y-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-light leading-[0.9] text-white">
-                Transform your
-                <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  ideas into digital
-                </span>
-                <span className="block text-white">
-                  success
-                </span>
-                <span className="block text-primary/90 font-light">
-                  with us!
-                </span>
-              </h1>
+            <div className="flex items-center gap-8 lg:gap-12">
+              {/* Title */}
+              <div className="space-y-6 flex-1">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] text-white">
+                  Transform your
+                  <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                    ideas into digital
+                  </span>
+                  <span className="block text-white">
+                    success
+                  </span>
+                  <span className="block text-primary/90 font-light">
+                    with us!
+                  </span>
+                </h1>
+              </div>
+
+              {/* Profile Image - positioned next to title */}
+              <div className="hidden lg:block">
+                <div className="relative">
+                  {/* Fluid background effects */}
+                  <div className="absolute inset-0 -z-10">
+                    <div className="w-80 h-80 relative">
+                      {/* Main fluid shapes */}
+                      <div className="absolute inset-8 bg-gradient-to-br from-primary/30 via-primary/20 to-primary/10 rounded-full blur-3xl animate-[morphing_8s_ease-in-out_infinite]"></div>
+                      <div className="absolute inset-12 bg-gradient-to-tl from-primary/25 via-transparent to-primary/15 rounded-full blur-2xl animate-[morphing_6s_ease-in-out_infinite_reverse]"></div>
+                      
+                      {/* Floating light elements */}
+                      <div className="absolute top-16 right-12 w-32 h-32 bg-primary/25 rounded-full blur-xl animate-[fluidMove_10s_ease-in-out_infinite]"></div>
+                      <div className="absolute bottom-20 left-16 w-24 h-24 bg-primary/30 rounded-full blur-lg animate-[fluidMove_8s_ease-in-out_infinite_reverse]"></div>
+                      <div className="absolute top-1/3 left-8 w-20 h-20 bg-primary/20 rounded-full blur-md animate-[fluidMove_12s_ease-in-out_infinite]"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Profile Avatar */}
+                  <div className="relative z-10 w-72 h-72 mx-auto">
+                    <div className="relative w-full h-full group">
+                      <Avatar className="w-full h-full border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105">
+                        <AvatarImage 
+                          src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
+                          alt="Caio Medeiros"
+                          className="object-cover"
+                        />
+                        <AvatarFallback className="text-6xl font-light bg-gradient-to-br from-primary/20 to-primary/5 text-white">
+                          CM
+                        </AvatarFallback>
+                      </Avatar>
+                      
+                      {/* Floating accent particles */}
+                      <div className="absolute -top-6 -right-6 w-4 h-4 bg-primary rounded-full animate-[twinkle_3s_ease-in-out_infinite] opacity-80"></div>
+                      <div className="absolute -bottom-4 -left-4 w-3 h-3 bg-primary/70 rounded-full animate-[twinkle_4s_ease-in-out_infinite] opacity-60"></div>
+                      <div className="absolute top-1/4 -right-8 w-2 h-2 bg-primary/50 rounded-full animate-[twinkle_5s_ease-in-out_infinite] opacity-40"></div>
+                      <div className="absolute bottom-1/4 -left-6 w-2 h-2 bg-primary/60 rounded-full animate-[twinkle_3.5s_ease-in-out_infinite] opacity-50"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
             <p className="text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">
@@ -84,12 +128,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Profile Image with fluid effects */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          {/* Mobile Profile Image - shown on smaller screens */}
+          <div className="lg:hidden flex justify-center">
             <div className="relative">
               {/* Fluid background effects */}
               <div className="absolute inset-0 -z-10">
-                <div className="w-96 h-96 lg:w-[500px] lg:h-[500px] relative">
+                <div className="w-80 h-80 lg:w-[500px] lg:h-[500px] relative">
                   {/* Main fluid shapes */}
                   <div className="absolute inset-8 bg-gradient-to-br from-primary/30 via-primary/20 to-primary/10 rounded-full blur-3xl animate-[morphing_8s_ease-in-out_infinite]"></div>
                   <div className="absolute inset-12 bg-gradient-to-tl from-primary/25 via-transparent to-primary/15 rounded-full blur-2xl animate-[morphing_6s_ease-in-out_infinite_reverse]"></div>

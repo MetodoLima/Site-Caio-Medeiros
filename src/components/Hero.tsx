@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -38,7 +39,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 animate-fade-in">
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-sm text-primary/80 font-medium tracking-widest uppercase">
+            <span className="text-xs text-primary/80 font-medium tracking-widest uppercase">
               Disponível para Trabalho
             </span>
           </div>

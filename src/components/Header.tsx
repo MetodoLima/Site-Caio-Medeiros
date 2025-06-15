@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="backdrop-blur-md bg-white/30 dark:bg-black/20 border-b border-border transition-colors duration-300">
+    <header className="backdrop-blur-lg bg-white/10 dark:bg-black/10 border-b border-white/20 dark:border-white/10 transition-colors duration-300">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <div className="text-2xl font-semibold tracking-tight">
@@ -30,4 +30,3 @@ const Header = () => {
 };
 
 export default Header;
-

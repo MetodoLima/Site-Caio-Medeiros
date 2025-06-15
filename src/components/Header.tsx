@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="backdrop-blur-xl bg-black/40 dark:bg-black/60 border-b border-white/10 dark:border-white/5 transition-colors duration-300">
+    <header className="backdrop-blur-xl bg-gradient-to-br from-gray-900/80 via-black/80 to-gray-900/80 border-b border-white/10 dark:border-white/5 transition-colors duration-300">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <div className="text-2xl font-semibold tracking-tight text-white">

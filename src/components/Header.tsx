@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="backdrop-blur-xl bg-gradient-to-br from-gray-900/80 via-black/80 to-gray-900/80 border-b border-white/10 dark:border-white/5 transition-colors duration-300">
-      <div className="container mx-auto px-8 py-5">
+      <div className="container mx-auto px-8 py-3">
         <nav className="flex items-center justify-between">
           <div className="text-xl font-semibold tracking-tight text-white">
             Caio <span className="text-primary">Medeiros</span>

@@ -1,8 +1,6 @@
 import { Card } from '@/components/ui/card';
-
 const About = () => {
-  return (
-    <>
+  return <>
       {/* Div de transição com degradê */}
       <div className="h-32 bg-gradient-to-b from-gray-900 via-gray-800/50 to-secondary/30"></div>
       
@@ -40,11 +38,11 @@ const About = () => {
 
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <Card className="p-4 sm:p-6 text-center hover-lift">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">10+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">3+</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">Anos de experiência</div>
                 </Card>
                 <Card className="p-4 sm:p-6 text-center hover-lift">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">200+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">100+</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">Projetos realizados</div>
                 </Card>
               </div>
@@ -71,8 +69,6 @@ const About = () => {
         </div>
       </div>
     </section>
-    </>
-  );
+    </>;
 };
-
 export default About;

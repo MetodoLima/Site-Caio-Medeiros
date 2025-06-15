@@ -1,17 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4 overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4 overflow-hidden">
       {/* Animated fluid background lights */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large flowing light orbs */}
@@ -55,19 +54,8 @@ const Hero = () => {
             and branding for every stage of your business.
           </p>
           <div className="flex flex-row gap-4 pt-4">
-            <Button 
-              size="default"
-              onClick={() => scrollToSection('portfolio')}
-              className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25"
-            >
-              Our Work
-            </Button>
-            <Button 
-              variant="outline" 
-              size="default"
-              onClick={() => scrollToSection('contact')}
-              className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-primary/50 transition-all duration-300"
-            >
+            <Button size="default" onClick={() => scrollToSection('portfolio')} className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25">Fale Comigo</Button>
+            <Button variant="outline" size="default" onClick={() => scrollToSection('contact')} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-primary/50 transition-all duration-300">
               Services
             </Button>
           </div>
@@ -88,15 +76,11 @@ const Hero = () => {
             </div>
             {/* Profile Image (apenas a imagem grande, sem bordas arredondadas ou efeitos) */}
             <div className="relative z-10 w-full h-full mx-auto group">
-              <img 
-                src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png"
-                alt="Profile"
-                className="w-full h-full object-cover"
-                style={{
-                  borderRadius: '0', // sem arredondamento
-                  objectFit: 'cover'
-                }}
-              />
+              <img src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png" alt="Profile" className="w-full h-full object-cover" style={{
+              borderRadius: '0',
+              // sem arredondamento
+              objectFit: 'cover'
+            }} />
               {/* Floating accent particles */}
               <div className="absolute -top-6 -right-6 w-4 h-4 bg-primary rounded-full animate-[twinkle_3s_ease-in-out_infinite] opacity-80"></div>
               <div className="absolute -bottom-4 -left-4 w-3 h-3 bg-primary/70 rounded-full animate-[twinkle_4s_ease-in-out_infinite] opacity-60"></div>
@@ -109,15 +93,10 @@ const Hero = () => {
       
       {/* Scroll indicator */}
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="p-4 rounded-full border border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm"
-        >
+        <button onClick={() => scrollToSection('about')} className="p-4 rounded-full border border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm">
           <ArrowDown className="w-6 h-6 text-primary" />
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

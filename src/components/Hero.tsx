@@ -57,23 +57,23 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          <p className="text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">
+          <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">
             We're your partner in product design, website creation, 
             and branding for every stage of your business.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 pt-4">
+          <div className="flex flex-row gap-4 pt-4">
             <Button 
-              size="lg"
+              size="default"
               onClick={() => scrollToSection('portfolio')}
-              className="bg-primary text-black hover:bg-primary/90 text-base px-10 py-7 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25"
+              className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25"
             >
               Our Work
             </Button>
             <Button 
               variant="outline" 
-              size="lg"
+              size="default"
               onClick={() => scrollToSection('contact')}
-              className="text-base px-10 py-7 rounded-full border-2 border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-primary/50 transition-all duration-300"
+              className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-primary/50 transition-all duration-300"
             >
               Services
             </Button>

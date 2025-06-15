@@ -78,13 +78,13 @@ const Hero = () => {
                     </div>
                   </div>
                   
-                  {/* Profile Image */}
+                  {/* Profile Image (updated) */}
                   <div className="relative z-10 w-72 h-72 mx-auto">
                     <div className="relative w-full h-full group">
                       <img 
-                        src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
-                        alt="Caio Medeiros"
-                        className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
+                        src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png"
+                        alt="Profile"
+                        className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
                       />
                       
                       {/* Floating accent particles */}
@@ -131,7 +131,6 @@ const Hero = () => {
                   {/* Main fluid shapes */}
                   <div className="absolute inset-8 bg-gradient-to-br from-primary/30 via-primary/20 to-primary/10 rounded-full blur-3xl animate-[morphing_8s_ease-in-out_infinite]"></div>
                   <div className="absolute inset-12 bg-gradient-to-tl from-primary/25 via-transparent to-primary/15 rounded-full blur-2xl animate-[morphing_6s_ease-in-out_infinite_reverse]"></div>
-                  
                   {/* Floating light elements */}
                   <div className="absolute top-16 right-12 w-32 h-32 bg-primary/25 rounded-full blur-xl animate-[fluidMove_10s_ease-in-out_infinite]"></div>
                   <div className="absolute bottom-20 left-16 w-24 h-24 bg-primary/30 rounded-full blur-lg animate-[fluidMove_8s_ease-in-out_infinite_reverse]"></div>
@@ -139,13 +138,13 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Profile Image */}
+              {/* Profile Image (updated) */}
               <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96 mx-auto">
                 <div className="relative w-full h-full group">
                   <img 
-                    src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
-                    alt="Caio Medeiros"
-                    className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
+                    src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png"
+                    alt="Profile"
+                    className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
                   />
                   
                   {/* Floating accent particles */}

@@ -92,14 +92,14 @@ const Hero = () => {
                 <div className="absolute top-1/3 left-8 w-20 h-20 bg-primary/20 rounded-3xl blur-md animate-[fluidMove_12s_ease-in-out_infinite]"></div>
               </div>
             </div>
-            {/* Profile Image (not-rounded, large) */}
+            {/* Profile Image (apenas a imagem grande, sem bordas arredondadas ou efeitos) */}
             <div className="relative z-10 w-full h-full mx-auto group">
               <img 
                 src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png"
                 alt="Profile"
-                className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl rounded-3xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
+                className="w-full h-full object-cover"
                 style={{
-                  borderRadius: '1.5rem', // slightly rounded corners - remove if totally square
+                  borderRadius: '0', // sem arredondamento
                   objectFit: 'cover'
                 }}
               />

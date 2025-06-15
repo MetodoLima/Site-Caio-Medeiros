@@ -1,4 +1,5 @@
 import { Card } from '@/components/ui/card';
+
 const About = () => {
   return <>
       {/* Div de transição com degradê */}
@@ -18,13 +19,16 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="animate-slide-up order-2 md:order-1">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mx-auto max-w-sm md:max-w-none">
-                <div className="w-4/5 h-4/5 bg-muted rounded-xl flex items-center justify-center">
-                  <span className="text-4xl sm:text-5xl md:text-6xl text-muted-foreground">📸</span>
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mx-auto max-w-sm md:max-w-none overflow-hidden">
+                <img 
+                  src="/lovable-uploads/7f02ccf0-73cc-4533-bb83-5f7bb3d380f4.png" 
+                  alt="Perfil profissional de Caio Medeiros no Instagram" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
 
+            
             <div className="space-y-6 sm:space-y-8 animate-slide-up order-1 md:order-2">
               <div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4">Minha Visão</h3>
@@ -71,4 +75,5 @@ const About = () => {
     </section>
     </>;
 };
+
 export default About;

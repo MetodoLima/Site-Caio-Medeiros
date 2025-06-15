@@ -1,3 +1,4 @@
+
 import { Card } from '@/components/ui/card';
 
 const About = () => {
@@ -23,7 +24,7 @@ const About = () => {
                 <img 
                   src="/lovable-uploads/7f02ccf0-73cc-4533-bb83-5f7bb3d380f4.png" 
                   alt="Perfil profissional de Caio Medeiros no Instagram" 
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
             </div>

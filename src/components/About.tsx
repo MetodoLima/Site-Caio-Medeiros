@@ -2,11 +2,7 @@ import { Card } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <>
-      {/* Div de transição com degradê */}
-      <div className="h-32 bg-gradient-to-b from-gray-900 via-gray-800/50 to-secondary/30"></div>
-      
-      <section id="about" className="py-16 sm:py-20 md:py-24 bg-secondary/30">
+    <section id="about" className="py-16 sm:py-20 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
@@ -71,7 +67,6 @@ const About = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };
 

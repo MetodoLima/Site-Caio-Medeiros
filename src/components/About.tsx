@@ -9,11 +9,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight mb-4 sm:mb-6">Sobre Mim</h2>
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Com mais de uma década de experiência no mercado publicitário, 
-              especializo-me em criar identidades visuais marcantes e conteúdos 
-              audiovisuais que geram conexão emocional e resultados efetivos.
-            </p>
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">Com mais de 3 anos de experiência no mercado publicitário, especializo-me em criar identidades visuais marcantes e conteúdos audiovisuais que geram conexão emocional e resultados efetivos.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">

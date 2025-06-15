@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -79,19 +78,14 @@ const Hero = () => {
                     </div>
                   </div>
                   
-                  {/* Profile Avatar */}
+                  {/* Profile Image */}
                   <div className="relative z-10 w-72 h-72 mx-auto">
                     <div className="relative w-full h-full group">
-                      <Avatar className="w-full h-full border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105">
-                        <AvatarImage 
-                          src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
-                          alt="Caio Medeiros"
-                          className="object-cover"
-                        />
-                        <AvatarFallback className="text-6xl font-light bg-gradient-to-br from-primary/20 to-primary/5 text-white">
-                          CM
-                        </AvatarFallback>
-                      </Avatar>
+                      <img 
+                        src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
+                        alt="Caio Medeiros"
+                        className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
+                      />
                       
                       {/* Floating accent particles */}
                       <div className="absolute -top-6 -right-6 w-4 h-4 bg-primary rounded-full animate-[twinkle_3s_ease-in-out_infinite] opacity-80"></div>
@@ -145,19 +139,14 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Profile Avatar */}
+              {/* Profile Image */}
               <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96 mx-auto">
                 <div className="relative w-full h-full group">
-                  <Avatar className="w-full h-full border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105">
-                    <AvatarImage 
-                      src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
-                      alt="Caio Medeiros"
-                      className="object-cover"
-                    />
-                    <AvatarFallback className="text-6xl font-light bg-gradient-to-br from-primary/20 to-primary/5 text-white">
-                      CM
-                    </AvatarFallback>
-                  </Avatar>
+                  <img 
+                    src="/lovable-uploads/f82410c3-3053-4e0a-8b00-5736e105370c.png" 
+                    alt="Caio Medeiros"
+                    className="w-full h-full object-cover border-4 border-primary/30 shadow-2xl transition-all duration-500 group-hover:border-primary/50 group-hover:shadow-primary/20 hover:scale-105"
+                  />
                   
                   {/* Floating accent particles */}
                   <div className="absolute -top-6 -right-6 w-4 h-4 bg-primary rounded-full animate-[twinkle_3s_ease-in-out_infinite] opacity-80"></div>

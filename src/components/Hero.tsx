@@ -52,7 +52,7 @@ const Hero = () => {
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>
           <div className="flex flex-row gap-4 pt-4">
             <Button size="default" onClick={() => scrollToSection('portfolio')} className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25">Fale Comigo</Button>
-            <Button variant="outline" size="default" onClick={() => scrollToSection('contact')} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 hover:bg-gray-800 hover:border-primary/50 transition-all duration-300 text-slate-50">Portifólio</Button>
+            <Button variant="outline" size="default" onClick={() => scrollToSection('contact')} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 hover:border-primary/50 transition-all duration-300 bg-lime-50 text-gray-950">Portifólio</Button>
           </div>
         </div>
 

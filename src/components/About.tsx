@@ -43,7 +43,7 @@ const About = () => {
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4">Formação & Expertise</h3>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4">Formação & Serviços</h3>
                 <ul className="space-y-2 text-muted-foreground text-sm sm:text-base">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>

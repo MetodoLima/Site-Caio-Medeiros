@@ -42,8 +42,6 @@ const Portfolio = () => {
     }
   ];
 
-  const categories = ["Todos", "Branding", "Vídeo", "Fotografia"];
-
   return (
     <section id="portfolio" className="py-16 sm:py-20 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -58,16 +56,13 @@ const Portfolio = () => {
 
           {/* Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={category === "Todos" ? "default" : "outline"}
-                size="sm"
-                className={`text-xs sm:text-sm ${category === "Todos" ? "bg-primary text-primary-foreground" : ""}`}
-              >
-                {category}
-              </Button>
-            ))}
+            <Button
+              variant="default"
+              size="sm"
+              className="text-xs sm:text-sm bg-primary text-primary-foreground"
+            >
+              Todos
+            </Button>
           </div>
 
           {/* Portfolio Grid */}

@@ -57,9 +57,7 @@ const Contact = () => {
               <CardContent className="p-6 sm:p-8 text-center">
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🚀</div>
                 <h4 className="text-lg sm:text-xl md:text-2xl font-medium mb-2 sm:mb-3 text-primary">Pronto para começar?</h4>
-                <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">
-                  Agende uma consulta gratuita de 30 minutos para discutirmos seu projeto.
-                </p>
+                <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">Me mande uma mensagem para discutirmos seu projeto.</p>
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base">Fale Comigo
               </Button>
               </CardContent>

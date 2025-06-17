@@ -37,10 +37,10 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 animate-fade-in">
           <div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] text-white mt-20">
-              Transform your
-              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">ideias em</span>
-              <span className="block text-white">Publicidade</span>
-              <span className="block text-primary/90 font-light">comigo!</span>
+              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Publicidade</span>
+              <span className="block text-white">com propósito,</span>
+              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">design</span>
+              <span className="block text-white">com identidade.</span>
             </h1>
           </div>
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>

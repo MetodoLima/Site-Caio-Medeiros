@@ -1,9 +1,6 @@
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-foreground text-background py-8 sm:py-12">
+  return <footer className="bg-foreground text-background py-8 sm:py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
@@ -35,7 +32,7 @@ const Footer = () => {
               <div className="space-y-1 sm:space-y-2 text-background/70 text-xs sm:text-sm">
                 <div>caio@medeirosadv.com</div>
                 <div>+55 (11) 99999-9999</div>
-                <div>São Paulo, SP</div>
+                <div>Maranguape, CE</div>
               </div>
             </div>
           </div>
@@ -55,8 +52,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -39,9 +38,7 @@ const Hero = () => {
           <div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] text-white mt-20">
               Transform your
-              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                ideas into digital
-              </span>
+              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">ideias em</span>
               <span className="block text-white">
                 success
               </span>

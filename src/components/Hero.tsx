@@ -40,9 +40,7 @@ const Hero = () => {
               Transform your
               <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">ideias em</span>
               <span className="block text-white">sucesso digital</span>
-              <span className="block text-primary/90 font-light">
-                with us!
-              </span>
+              <span className="block text-primary/90 font-light">comigo!</span>
             </h1>
           </div>
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>

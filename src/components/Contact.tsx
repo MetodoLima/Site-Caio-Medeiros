@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 const Contact = () => {
@@ -11,11 +12,6 @@ const Contact = () => {
     title: "WhatsApp",
     info: "+55 (11) 99999-9999",
     action: "https://wa.me/5511999999999"
-  }, {
-    icon: "🔗",
-    title: "LinkedIn",
-    info: "/in/caio-medeiros",
-    action: "https://linkedin.com/in/caio-medeiros"
   }];
   return <section id="contact" className="py-16 sm:py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">

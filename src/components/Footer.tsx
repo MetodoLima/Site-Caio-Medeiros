@@ -1,3 +1,4 @@
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-foreground text-background py-8 sm:py-12">
@@ -48,6 +49,13 @@ const Footer = () => {
               <a href="#" className="text-background/50 hover:text-primary transition-colors duration-300 text-xs sm:text-sm">
                 Termos de Uso
               </a>
+            </div>
+          </div>
+
+          {/* Developer Credit */}
+          <div className="mt-4 sm:mt-6 text-center border-t border-background/20 pt-4 sm:pt-6">
+            <div className="text-background/50 text-xs sm:text-sm">
+              Site desenvolvido por <span className="text-primary font-semibold">Diego de Lima</span>
             </div>
           </div>
         </div>

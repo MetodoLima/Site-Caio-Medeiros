@@ -1,4 +1,3 @@
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-foreground text-background py-8 sm:py-12">
@@ -55,7 +54,7 @@ const Footer = () => {
           {/* Developer Credit */}
           <div className="mt-4 sm:mt-6 text-center border-t border-background/20 pt-4 sm:pt-6">
             <div className="text-background/50 text-xs sm:text-sm">
-              Site desenvolvido por <span className="text-primary font-semibold">Diego de Lima</span>
+              Site desenvolvido por <span className="text-primary font-semibold text-lg">Diego de Lima</span>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Instagram } from 'lucide-react';
+
 const Contact = () => {
   const contactMethods = [{
     icon: "📧",
@@ -12,7 +14,13 @@ const Contact = () => {
     title: "WhatsApp",
     info: "+55 (11) 99999-9999",
     action: "https://wa.me/5511999999999"
+  }, {
+    icon: <Instagram className="text-2xl sm:text-3xl" />,
+    title: "Instagram",
+    info: "@caio.medeiros",
+    action: "https://instagram.com/caio.medeiros"
   }];
+
   return <section id="contact" className="py-16 sm:py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -29,7 +37,7 @@ const Contact = () => {
             <div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-4 sm:mb-6 text-center">Formas de Contato</h3>
               <div className="space-y-3 sm:space-y-4">
-                {contactMethods.map((method, index) => <Card key={index} className="hover-lift cursor-pointer group">
+                {contactMethods.map((method, index) => <Card key={index} className="hover-lift cursor-pointer group" onClick={() => window.open(method.action, '_blank')}>
                     <CardContent className="p-4 sm:p-6">
                       <div className="flex items-center">
                         <div className="text-2xl sm:text-3xl mr-3 sm:mr-4 group-hover:scale-110 transition-transform duration-300">

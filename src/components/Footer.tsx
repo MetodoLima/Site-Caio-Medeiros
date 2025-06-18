@@ -1,3 +1,4 @@
+
 import { Instagram } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -57,7 +58,7 @@ const Footer = () => {
             <div className="text-background/50 text-xs sm:text-sm mb-2">
               Site desenvolvido por <span className="text-primary font-semibold text-lg">Diego de Lima</span>
             </div>
-            <a href="https://instagram.com/diegolima" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-background/50 hover:text-primary transition-colors duration-300">
+            <a href="https://instagram.com/diego.li_" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-background/50 hover:text-primary transition-colors duration-300">
               <Instagram className="w-4 h-4" />
               <span className="text-xs sm:text-sm">@diego.li_</span>
             </a>

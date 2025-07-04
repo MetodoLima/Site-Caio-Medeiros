@@ -1,5 +1,15 @@
+
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
 const About = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return <>
       {/* Div de transição com degradê */}
       <div className="h-32 bg-gradient-to-b from-gray-900 via-gray-800/50 to-secondary/30"></div>
@@ -40,6 +50,15 @@ const About = () => {
                   <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">100+</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">Projetos realizados</div>
                 </Card>
+              </div>
+
+              <div className="pt-4">
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 text-sm sm:text-base"
+                >
+                  Fale Comigo
+                </Button>
               </div>
             </div>
           </div>

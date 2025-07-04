@@ -1,17 +1,11 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactMethods = [{
-    icon: "📧",
-    title: "Email",
-    info: "caio@medeirosadv.com",
-    action: "mailto:caio@medeirosadv.com"
-  }, {
     icon: "📱",
-    title: "WhatsApp",
+    title: "WhatsApp", 
     info: "+55 (11) 99999-9999",
     action: "https://wa.me/5511999999999"
   }, {

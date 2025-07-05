@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -6,39 +5,39 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Identidade Visual TechCorp",
-      category: "Branding",
+      category: "Branding", 
       description: "Desenvolvimento completo da identidade visual para startup de tecnologia",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+      image: "/lovable-uploads/2a0bb4fe-c37d-424a-92ca-0040fbc2c97f.png"
     },
     {
-      title: "Campanha Institucional",
-      category: "Vídeo",
-      description: "Produção audiovisual para apresentação dos valores corporativos",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"
+      title: "Design Social Media",
+      category: "Design",
+      description: "Criação de conteúdo visual para redes sociais com identidade única",
+      image: "/lovable-uploads/e41a563f-f6c3-4cc5-bea1-5780bd469078.png"
     },
     {
-      title: "Fotografia de Produtos",
+      title: "Cobertura de Casamento",
       category: "Fotografia",
-      description: "Sessão profissional para catálogo de produtos premium",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
+      description: "Registro profissional de momentos especiais e cerimônias",
+      image: "/lovable-uploads/eecbaddf-aed3-445a-bd17-1c0d87f25bfa.png"
     },
     {
-      title: "Rebranding Completo",
-      category: "Branding",
-      description: "Renovação total da marca para empresa consolidada no mercado",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop"
+      title: "Design Social Media - Pet",
+      category: "Design",
+      description: "Desenvolvimento de identidade visual para negócios pet",
+      image: "/lovable-uploads/723fdd2e-c05b-4654-88e5-c56f3174e291.png"
     },
     {
-      title: "Vídeo Promocional",
-      category: "Vídeo",
-      description: "Criação de conteúdo para lançamento de produto",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
-    },
-    {
-      title: "Ensaio Corporativo",
+      title: "Cobertura ABC",
       category: "Fotografia",
-      description: "Retratos executivos e ambientes da empresa",
-      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=600&h=400&fit=crop"
+      description: "Sessão profissional infantil e de eventos especiais",
+      image: "/lovable-uploads/ac0e5304-f6c9-4fd2-b117-4407f34e0fe3.png"
+    },
+    {
+      title: "Retrato Profissional",
+      category: "Fotografia",
+      description: "Sessão de retratos corporativos e profissionais",
+      image: "/lovable-uploads/72429353-dcc6-4ddf-abad-ae9447d7d62f.png"
     }
   ];
 

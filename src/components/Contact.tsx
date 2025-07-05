@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Instagram } from 'lucide-react';
@@ -17,7 +16,7 @@ const Contact = () => {
     icon: <Instagram className="text-2xl sm:text-3xl" />,
     title: "Instagram",
     info: "@caio.medeiros",
-    action: "https://instagram.com/caio.medeiros"
+    action: "https://www.instagram.com/caiomarxg/"
   }];
 
   return <section id="contact" className="py-16 sm:py-20 md:py-24 bg-background">

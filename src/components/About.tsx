@@ -10,6 +10,10 @@ const About = () => {
     }
   };
 
+  const openWhatsApp = () => {
+    window.open('https://api.whatsapp.com/send/?phone=5585989197429&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0&fbclid=PAQ0xDSwLWEHFleHRuA2FlbQIxMAABpzlzxV7EIKV_kuxdfC3fRB66633A4ygLV0R1gBln2dVUv8Zla3DhuHvWiRxR_aem_WrsWchUc0fwPNLrBL3ZLbg', '_blank');
+  };
+
   return <>
       {/* Div de transição com degradê */}
       <div className="h-32 bg-gradient-to-b from-gray-900 via-gray-800/50 to-secondary/30"></div>
@@ -54,7 +58,7 @@ const About = () => {
 
               <div className="pt-4">
                 <Button 
-                  onClick={() => scrollToSection('contact')}
+                  onClick={openWhatsApp}
                   className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 text-sm sm:text-base"
                 >
                   Fale Comigo
@@ -67,4 +71,5 @@ const About = () => {
     </section>
     </>;
 };
+
 export default About;

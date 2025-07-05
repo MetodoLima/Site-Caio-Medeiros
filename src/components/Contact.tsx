@@ -1,13 +1,18 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Instagram } from 'lucide-react';
 
 const Contact = () => {
+  const openWhatsApp = () => {
+    window.open('https://api.whatsapp.com/send/?phone=5585989197429&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0&fbclid=PAQ0xDSwLWEHFleHRuA2FlbQIxMAABpzlzxV7EIKV_kuxdfC3fRB66633A4ygLV0R1gBln2dVUv8Zla3DhuHvWiRxR_aem_WrsWchUc0fwPNLrBL3ZLbg', '_blank');
+  };
+
   const contactMethods = [{
     icon: "📱",
     title: "WhatsApp", 
-    info: "+55 (11) 99999-9999",
-    action: "https://wa.me/5511999999999"
+    info: "+55 (85) 98919-7429",
+    action: "https://api.whatsapp.com/send/?phone=5585989197429&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0&fbclid=PAQ0xDSwLWEHFleHRuA2FlbQIxMAABpzlzxV7EIKV_kuxdfC3fRB66633A4ygLV0R1gBln2dVUv8Zla3DhuHvWiRxR_aem_WrsWchUc0fwPNLrBL3ZLbg"
   }, {
     icon: <Instagram className="text-2xl sm:text-3xl" />,
     title: "Instagram",
@@ -56,7 +61,7 @@ const Contact = () => {
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🚀</div>
                 <h4 className="text-lg sm:text-xl md:text-2xl font-medium mb-2 sm:mb-3 text-primary">Pronto para começar?</h4>
                 <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">Me mande uma mensagem para discutirmos seu projeto.</p>
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base">Fale Comigo
+                <Button onClick={openWhatsApp} className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base">Fale Comigo
               </Button>
               </CardContent>
             </Card>
@@ -65,4 +70,5 @@ const Contact = () => {
       </div>
     </section>;
 };
+
 export default Contact;

@@ -17,6 +17,10 @@ const Hero = () => {
     window.open('https://api.whatsapp.com/send/?phone=5585989197429&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0&fbclid=PAQ0xDSwLWEHFleHRuA2FlbQIxMAABpzlzxV7EIKV_kuxdfC3fRB66633A4ygLV0R1gBln2dVUv8Zla3DhuHvWiRxR_aem_WrsWchUc0fwPNLrBL3ZLbg', '_blank');
   };
 
+  const openBehance = () => {
+    window.open('https://www.behance.net/caiomedeiros14/projects?fbclid=PAQ0xDSwLWEFBleHRuA2FlbQIxMAABp5yf5XzEQ6PInJb92qON5mLoqs7AId-tt9bPGq9HNvNgtR9vZcXQ-uw8V5nF_aem_nDEg76vQlfOQHmpC519hkg', '_blank');
+  };
+
   return <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4 overflow-hidden">
       {/* Animated fluid background lights */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -53,7 +57,7 @@ const Hero = () => {
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>
           <div className="flex flex-row gap-4 pt-4">
             <Button size="default" onClick={openWhatsApp} className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25">Fale Comigo</Button>
-            <Button variant="outline" size="default" onClick={() => scrollToSection('contact')} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 hover:border-primary/50 transition-all duration-300 bg-lime-50 text-gray-950">Portifólio</Button>
+            <Button variant="outline" size="default" onClick={openBehance} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 hover:border-primary/50 transition-all duration-300 bg-lime-50 text-gray-950">Portfólio</Button>
           </div>
         </div>
 

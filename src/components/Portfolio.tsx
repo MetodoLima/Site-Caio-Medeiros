@@ -1,7 +1,12 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const Portfolio = () => {
+  const openBehance = () => {
+    window.open('https://www.behance.net/caiomedeiros14/projects?fbclid=PAQ0xDSwLWEFBleHRuA2FlbQIxMAABp5yf5XzEQ6PInJb92qON5mLoqs7AId-tt9bPGq9HNvNgtR9vZcXQ-uw8V5nF_aem_nDEg76vQlfOQHmpC519hkg', '_blank');
+  };
+
   const projects = [
     {
       title: "Identidade Visual TechCorp",
@@ -67,7 +72,7 @@ const Portfolio = () => {
           {/* Portfolio Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group overflow-hidden hover-lift border-border/50">
+              <Card key={index} className="group overflow-hidden hover-lift border-border/50 cursor-pointer" onClick={openBehance}>
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={project.image} 
@@ -94,6 +99,7 @@ const Portfolio = () => {
             <Button 
               variant="outline" 
               size="lg"
+              onClick={openBehance}
               className="border-2 text-sm sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
             >
               Ver Todos os Projetos

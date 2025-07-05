@@ -1,4 +1,3 @@
-
 import { Instagram } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,8 +31,8 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contato</h4>
               <div className="space-y-1 sm:space-y-2 text-background/70 text-xs sm:text-sm">
-                <div>caio@medeirosadv.com</div>
-                <div>+55 (11) 99999-9999</div>
+                <div></div>
+                <div>+55 (85) 9</div>
                 <div>Maranguape, CE</div>
               </div>
             </div>
@@ -45,11 +44,9 @@ const Footer = () => {
             </div>
             <div className="flex space-x-4 sm:space-x-6">
               <a href="#" className="text-background/50 hover:text-primary transition-colors duration-300 text-xs sm:text-sm">
-                Política de Privacidade
-              </a>
+            </a>
               <a href="#" className="text-background/50 hover:text-primary transition-colors duration-300 text-xs sm:text-sm">
-                Termos de Uso
-              </a>
+            </a>
             </div>
           </div>
 

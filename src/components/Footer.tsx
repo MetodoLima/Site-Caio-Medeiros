@@ -32,7 +32,7 @@ const Footer = () => {
               <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contato</h4>
               <div className="space-y-1 sm:space-y-2 text-background/70 text-xs sm:text-sm">
                 <div></div>
-                <div>+55 (85) 989</div>
+                <div>+55 (85) 98919-7429</div>
                 <div>Maranguape, CE</div>
               </div>
             </div>

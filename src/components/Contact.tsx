@@ -15,7 +15,7 @@ const Contact = () => {
   }, {
     icon: <Instagram className="text-2xl sm:text-3xl" />,
     title: "Instagram",
-    info: "@caio.medeiros",
+    info: "@caiomarxg",
     action: "https://www.instagram.com/caiomarxg/"
   }];
 

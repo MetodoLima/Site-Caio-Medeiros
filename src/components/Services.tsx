@@ -50,17 +50,15 @@ const Services = () => {
                 className="group hover-lift p-6 sm:p-8 cursor-pointer transition-all duration-300 hover:shadow-xl"
                 onClick={openWhatsApp}
               >
-                <CardContent className="p-0">
-                  <div className="mb-4 sm:mb-6">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                    {service.description}
-                  </p>
-                </CardContent>
+                <div className="mb-4 sm:mb-6">
+                  {service.icon}
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4 group-hover:text-primary transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+                  {service.description}
+                </p>
               </Card>
             ))}
           </div>

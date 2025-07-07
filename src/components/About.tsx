@@ -1,4 +1,3 @@
-
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -56,7 +55,7 @@ const About = () => {
                 </Card>
               </div>
 
-              <div className="pt-4">
+              <div className="pt-4 text-center md:text-left">
                 <Button 
                   onClick={openWhatsApp}
                   className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 text-sm sm:text-base"

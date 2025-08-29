@@ -12,37 +12,43 @@ const Portfolio = () => {
       title: "Identidade Visual TechCorp",
       category: "Branding", 
       description: "Desenvolvimento completo da identidade visual para startup de tecnologia",
-      image: "/lovable-uploads/2a0bb4fe-c37d-424a-92ca-0040fbc2c97f.png"
+      image: "/lovable-uploads/2a0bb4fe-c37d-424a-92ca-0040fbc2c97f.png",
+      url: "https://www.behance.net/gallery/178884205/LAYSA-MEDEIROS-ID-VISUAL"
     },
     {
       title: "Design Social Media",
       category: "Design",
       description: "Criação de conteúdo visual para redes sociais com identidade única",
-      image: "/lovable-uploads/e41a563f-f6c3-4cc5-bea1-5780bd469078.png"
+      image: "/lovable-uploads/e41a563f-f6c3-4cc5-bea1-5780bd469078.png",
+      url:"https://www.behance.net/gallery/177244125/LEO-MEDEIROS-DESIGN-SOCIAL-MEDIA"
     },
     {
       title: "Cobertura de Casamento",
       category: "Fotografia",
       description: "Registro profissional de momentos especiais e cerimônias",
-      image: "/lovable-uploads/eecbaddf-aed3-445a-bd17-1c0d87f25bfa.png"
+      image: "/lovable-uploads/eecbaddf-aed3-445a-bd17-1c0d87f25bfa.png",
+      url:"https://www.behance.net/gallery/184539283/CASAMENTO-R-I-COBERTURA"
     },
     {
       title: "Design Social Media - Pet",
       category: "Design",
       description: "Desenvolvimento de identidade visual para negócios pet",
-      image: "/lovable-uploads/723fdd2e-c05b-4654-88e5-c56f3174e291.png"
+      image: "/lovable-uploads/723fdd2e-c05b-4654-88e5-c56f3174e291.png",
+      url:"https://www.behance.net/gallery/172232309/PET-SHOP-DESIGN-SOCIAL-MEDIA"
     },
     {
       title: "Cobertura ABC",
       category: "Fotografia",
       description: "Sessão profissional infantil e de eventos especiais",
-      image: "/lovable-uploads/ac0e5304-f6c9-4fd2-b117-4407f34e0fe3.png"
+      image: "/lovable-uploads/ac0e5304-f6c9-4fd2-b117-4407f34e0fe3.png",
+      url:"https://www.behance.net/gallery/196473043/ABC-COBERTURA"
     },
     {
       title: "Retrato Profissional",
       category: "Fotografia",
       description: "Sessão de retratos corporativos e profissionais",
-      image: "/lovable-uploads/72429353-dcc6-4ddf-abad-ae9447d7d62f.png"
+      image: "/lovable-uploads/72429353-dcc6-4ddf-abad-ae9447d7d62f.png",
+      url:"https://www.behance.net/caiomedeiros14/projects?fbclid=PAQ0xDSwLWEFBleHRuA2FlbQIxMAABp5yf5XzEQ6PInJb92qON5mLoqs7AId-tt9bPGq9HNvNgtR9vZcXQ-uw8V5nF_aem_nDEg76vQlfOQHmpC519hkg"
     }
   ];
 
@@ -72,7 +78,7 @@ const Portfolio = () => {
           {/* Portfolio Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="group overflow-hidden hover-lift border-border/50 cursor-pointer" onClick={openBehance}>
+              <Card key={index} className="group overflow-hidden hover-lift border-border/50 cursor-pointer" onClick={() => window.open(project.url, '_blank')}>
                 <div className="aspect-[4/3] overflow-hidden">
                   <img 
                     src={project.image} 

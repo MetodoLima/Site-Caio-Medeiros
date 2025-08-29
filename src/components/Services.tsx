@@ -25,7 +25,7 @@ const Services = () => {
 
   return (
     <section id="services" className="py-16 sm:py-20 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight mb-4 sm:mb-6">Serviços Especializados</h2>

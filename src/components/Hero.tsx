@@ -2,8 +2,25 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Sparkles } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { useState, useEffect } from 'react';
+
+const words = ["identidade.", "impacto.", "resultados.", "criatividade."];
 
 const Hero = () => {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsFading(true);
+      setTimeout(() => {
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+        setIsFading(false);
+      }, 500); // Duração da transição (fade-out)
+    }, 3500); // Intervalo entre as trocas de palavras
+
+    return () => clearInterval(timer);
+  }, []);
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -21,7 +38,7 @@ const Hero = () => {
     window.open('https://www.behance.net/caiomedeiros14/projects?fbclid=PAQ0xDSwLWEFBleHRuA2FlbQIxMAABp5yf5XzEQ6PInJb92qON5mLoqs7AId-tt9bPGq9HNvNgtR9vZcXQ-uw8V5nF_aem_nDEg76vQlfOQHmpC519hkg', '_blank');
   };
 
-  return <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4 overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4">
       {/* Animated fluid background lights */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large flowing light orbs */}
@@ -47,11 +64,13 @@ const Hero = () => {
         {/* Left: Text Content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 animate-fade-in">
           <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light leading-[0.9] text-white mt-20">
-              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Design com</span>
-              <span className="block text-white">propósito,</span>
-              <span className="block text-primary font-normal bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Publicidade com</span>
-              <span className="block text-white">identidade.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white mt-12 lg:mt-20">
+              <div className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent py-1">Design com</div>
+              <div className="text-white py-1">propósito,</div>
+              <div className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent py-1">Publicidade com</div>
+              <div className={`text-white transition-opacity duration-500 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'} py-1`}>
+                {words[wordIndex]}
+              </div>
             </h1>
           </div>
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>
@@ -62,7 +81,7 @@ const Hero = () => {
         </div>
 
         {/* Right: Large Image */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
+        <div className="w-full lg:w-1/2 flex items-center justify-center mt-0 lg:mt-0">
           <div className="relative w-full max-w-[520px] aspect-[1.1/1] lg:h-[500px]">
             {/* Fluid background effects */}
             <div className="absolute inset-0 -z-10">

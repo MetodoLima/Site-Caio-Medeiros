@@ -41,23 +41,14 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-black to-gray-900 px-4">
       {/* Animated fluid background lights */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Large flowing light orbs */}
-        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-32 right-32 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-[float_12s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite] transform -translate-x-1/2 -translate-y-1/2"></div>
+        {/* Static blurred orbs for depth */}
+        <div className="absolute top-20 left-20 w-96 h-96 bg-primary/15 rounded-full blur-3xl opacity-70"></div>
+        <div className="absolute bottom-32 right-32 w-80 h-80 bg-primary/10 rounded-full blur-3xl opacity-60"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-primary/5 rounded-full blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
         
-        {/* Smaller accent lights */}
-        <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-primary/30 rounded-full blur-xl animate-[twinkle_4s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-primary/25 rounded-full blur-lg animate-[twinkle_6s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute top-3/4 right-1/6 w-20 h-20 bg-primary/35 rounded-full blur-md animate-[twinkle_5s_ease-in-out_infinite]"></div>
-        
-        {/* Flowing lines for added fluidity */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-[flow_15s_linear_infinite]"></div>
-        <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent animate-[flow_20s_linear_infinite_reverse]"></div>
-        
-        {/* Diagonal accent lines */}
-        <div className="absolute top-20 right-10 w-96 h-px bg-gradient-to-l from-primary/40 to-transparent rotate-12 animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-80 h-px bg-gradient-to-r from-primary/30 to-transparent -rotate-12 animate-pulse"></div>
+        {/* Diagonal accent lines (static) */}
+        <div className="absolute top-20 right-10 w-96 h-px bg-gradient-to-l from-primary/30 to-transparent rotate-12 opacity-50"></div>
+        <div className="absolute bottom-20 left-20 w-80 h-px bg-gradient-to-r from-primary/20 to-transparent -rotate-12 opacity-50"></div>
       </div>
 
       <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">

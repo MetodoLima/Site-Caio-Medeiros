@@ -53,18 +53,18 @@ const Hero = () => {
 
       <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
         {/* Left: Text Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 animate-fade-in">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-8 animate-fade-in ml-4">
           <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white mt-12 lg:mt-20">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-light text-white mt-12 lg:mt-20">
               <div className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent py-1">Design com</div>
               <div className="text-white py-1">propósito,</div>
               <div className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent py-1">Publicidade com</div>
-              <div className={`text-white transition-opacity duration-500 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'} py-1`}>
+              <div className={`text-white transition-opacity duration-600 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'} py-1`}>
                 {words[wordIndex]}
               </div>
             </h1>
           </div>
-          <p className="text-sm sm:text-lg lg:text-xl text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>
+          <p className="text-sm sm:text-lg text-gray-300 max-w-xl leading-relaxed">Tenha sua marca com reconhecimento no digital comigo.</p>
           <div className="flex flex-row gap-4 pt-4">
             <Button size="default" onClick={openWhatsApp} className="bg-primary text-black hover:bg-primary/90 text-sm px-6 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25">Fale Comigo</Button>
             <Button variant="outline" size="default" onClick={openBehance} className="text-sm px-6 py-3 rounded-full border-2 border-gray-700 hover:border-primary/50 transition-all duration-300 bg-lime-50 text-gray-950">Portfólio</Button>
@@ -74,28 +74,18 @@ const Hero = () => {
         {/* Right: Large Image */}
         <div className="w-full lg:w-1/2 flex items-center justify-center mt-0 lg:mt-0">
           <div className="relative w-full max-w-[520px] aspect-[1.1/1] lg:h-[500px]">
-            {/* Fluid background effects */}
+            {/* Static background effects */}
             <div className="absolute inset-0 -z-10">
               <div className="w-full h-full relative">
-                <div className="absolute inset-8 bg-gradient-to-br from-primary/30 via-primary/20 to-primary/10 rounded-3xl blur-3xl animate-[morphing_8s_ease-in-out_infinite]"></div>
-                <div className="absolute inset-12 bg-gradient-to-tl from-primary/25 via-transparent to-primary/15 rounded-3xl blur-2xl animate-[morphing_6s_ease-in-out_infinite_reverse]"></div>
-                <div className="absolute top-16 right-12 w-32 h-32 bg-primary/25 rounded-3xl blur-xl animate-[fluidMove_10s_ease-in-out_infinite]"></div>
-                <div className="absolute bottom-20 left-16 w-24 h-24 bg-primary/30 rounded-3xl blur-lg animate-[fluidMove_8s_ease-in-out_infinite_reverse]"></div>
-                <div className="absolute top-1/3 left-8 w-20 h-20 bg-primary/20 rounded-3xl blur-md animate-[fluidMove_12s_ease-in-out_infinite]"></div>
+                <div className="absolute inset-8 bg-gradient-to-br from-primary/25 via-primary/15 to-primary/5 rounded-3xl blur-3xl"></div>
+                <div className="absolute inset-12 bg-gradient-to-tl from-primary/20 via-transparent to-primary/10 rounded-3xl blur-2xl"></div>
               </div>
             </div>
-            {/* Profile Image (apenas a imagem grande, sem bordas arredondadas ou efeitos) */}
+            {/* Profile Image */}
             <div className="relative z-10 w-full h-full mx-auto group">
-              <img src="/lovable-uploads/3970db6a-c1d6-42ac-b379-aaf20f2da8ac.png" alt="Profile" className="w-full h-full object-cover" style={{
-              borderRadius: '0',
-              // sem arredondamento
-              objectFit: 'cover'
+              <img src="/Pictures/HeroCaio-Foto.svg" alt="Profile" className="w-full h-full object-contain" style={{
+              borderRadius: '0'
             }} />
-              {/* Floating accent particles */}
-              <div className="absolute -top-6 -right-6 w-4 h-4 bg-primary rounded-full animate-[twinkle_3s_ease-in-out_infinite] opacity-80"></div>
-              <div className="absolute -bottom-4 -left-4 w-3 h-3 bg-primary/70 rounded-full animate-[twinkle_4s_ease-in-out_infinite] opacity-60"></div>
-              <div className="absolute top-1/4 -right-8 w-2 h-2 bg-primary/50 rounded-full animate-[twinkle_5s_ease-in-out_infinite] opacity-40"></div>
-              <div className="absolute bottom-1/4 -left-6 w-2 h-2 bg-primary/60 rounded-full animate-[twinkle_3.5s_ease-in-out_infinite] opacity-50"></div>
             </div>
           </div>
         </div>
